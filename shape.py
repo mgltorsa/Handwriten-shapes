@@ -1,7 +1,7 @@
 import copy
 import math
 class Shape:
-    MAXVALUE = 10
+    MAXVALUE = 40
 
     def __init__(self,matrix):
         self.__shape=matrix
@@ -35,11 +35,12 @@ class Shape:
                 matrixSubst+=math.fabs(matrix[row][column]-self.__shape[row][column])
         tmp= matrixSubst/self.__sumValues
         return 1-tmp
-
-                
+    
+    def __str__(self):
+        return str(self.__shape)
             
         
-def test():
+"""def test():
     matrix=[
         [10,10,10],
         [1,10,1],
@@ -55,4 +56,4 @@ def test():
     result=shape.calculateLikeness(var)
     print(result)
 
-test()
+test()"""
