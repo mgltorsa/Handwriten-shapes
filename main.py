@@ -68,8 +68,18 @@ def run_test(number:int):
         total_evaluated_key:total_evaluated
     }
 
+#PARA PINTAR MATRIX
+def print_matrix(matrix):
+    print("[",end="")
+    for i in range(0,len(matrix)-1):
+        print(str(matrix[i])+",")
+    print(str(matrix[len(matrix)-1]),end="")
+    print("]")
 
-result = run_test(4)
+matrix  =load_number_file(7)
+print_matrix(matrix)
+
+"""result = run_test(4)
 total_evaluated = result[total_evaluated_key]
 successful = result[successful_key]
 array_evaluated = result[array_evaluated_key]
@@ -85,7 +95,7 @@ array_evaluated = result[array_evaluated_key]
 rate = successful / total_evaluated
 
 
-print("Test - 7 --> Rate of success was %s, with %s successful and %s evaluated " % (rate,successful,total_evaluated) )
+print("Test - 7 --> Rate of success was %s, with %s successful and %s evaluated " % (rate,successful,total_evaluated) )"""
 
 
 
