@@ -47,8 +47,8 @@ def test():
     ]
     matrix1=[
         [9,3,8],
-        [5,6,1],
-        [1,6,2]
+        [1,6,3],
+        [0,7,1]
     ]
     shape=Shape(matrix)
     var=shape.preProcessing(matrix1)
