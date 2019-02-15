@@ -1,7 +1,7 @@
 import copy
 import math
 class Shape:
-    MAXVALUE = 40
+    MAXVALUE = 12
 
     def __init__(self,matrix):
         self.__shape=matrix
@@ -36,10 +36,15 @@ class Shape:
         tmp= matrixSubst/self.__sumValues
         return 1-tmp
     
-    def __str__(self):
-        return str(self.__shape)
+    def print_matrix(self):
+        print("[", end="")
+        for i in range(0, len(self.__shape)-1):
+            print(str(self.__shape[i])+",")
+        print(str(self.__shape[len(self.__shape)-1]), end="")
+        print("]")
             
         
+
 """def test():
     matrix=[
         [10,10,10],
