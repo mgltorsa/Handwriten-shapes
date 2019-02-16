@@ -27,7 +27,12 @@ class Shape:
                 row[i]=int(row[i])
         return matrix
     
-
+    """
+    calcula la semejanza entre las matrices matrix y self.__shape
+    calculando la matriz diferencia entre ellas, luego se suman los
+    valores de esta matriz, para finalmente dividirlo por la suma de
+    los valores en self.__shape
+    """
     def calculateLikeness(self,matrix):
         matrixSubst=0
         for row in range(0,len(matrix)):
@@ -35,7 +40,15 @@ class Shape:
                 matrixSubst+=math.fabs(matrix[row][column]-self.__shape[row][column])
         tmp= matrixSubst/self.__sumValues
         return 1-tmp
-    
+    """
+        pinta la matriz de la forma 
+        [
+            [item,...,item-n],
+            .
+            .
+            [item,...,item-n],
+        ]
+    """
     def print_matrix(self):
         print("[", end="")
         for i in range(0, len(self.__shape)-1):
