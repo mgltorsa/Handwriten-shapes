@@ -77,9 +77,9 @@ def print_matrix(matrix):
     print("]")
 
 matrix  =load_number_file(7)
-print_matrix(matrix)
+#print_matrix(matrix)
 
-"""result = run_test(4)
+result = run_test(4)
 total_evaluated = result[total_evaluated_key]
 successful = result[successful_key]
 array_evaluated = result[array_evaluated_key]
@@ -95,21 +95,4 @@ array_evaluated = result[array_evaluated_key]
 rate = successful / total_evaluated
 
 
-print("Test - 7 --> Rate of success was %s, with %s successful and %s evaluated " % (rate,successful,total_evaluated) )"""
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
+print("Test - 7 --> Rate of success was %s, with %s successful and %s evaluated " % (rate,successful,total_evaluated) )
