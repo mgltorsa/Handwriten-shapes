@@ -10,7 +10,10 @@ class Shape:
             for column in row:
                 self.__sumValues+=column
             
-
+    """
+    devuelve una matriz con los valores aumentados
+    en la proporcion del mayor numero soble MAXVALUE
+    """
     def preProcessing(self, matri):
         max = -1
         matrix=copy.deepcopy(matri)
