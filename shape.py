@@ -59,22 +59,4 @@ class Shape:
         print(str(self.__shape[len(self.__shape)-1]), end="")
         print("]")
             
-        
-
-"""def test():
-    matrix=[
-        [10,10,10],
-        [1,10,1],
-        [1,10,1]
-    ]
-    matrix1=[
-        [9,3,8],
-        [1,6,3],
-        [0,7,1]
-    ]
-    shape=Shape(matrix)
-    var=shape.preProcessing(matrix1)
-    result=shape.calculateLikeness(var)
-    print(result)
-
-test()"""
+    
